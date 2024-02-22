@@ -1,5 +1,6 @@
 # Custom Chatbox for Streamlabs
-![Uploading 2024-02-2121-10-09-ezgif.com-video-to-gif-converter.gif…]()
+![2024-02-2121-10-09-ezgif com-video-to-gif-converter](https://github.com/DuanLeeDom/ChatBox-Twitch/assets/116463153/aaca01dc-db3c-4a44-bbf5-d11a20698981)
+
 
 This is a simple project aimed at creating a customized chatbox for the Streamlabs platform by adding HTML, CSS, and JavaScript to provide a more dynamic and engaging experience during your live broadcasts.
 
