@@ -32,6 +32,7 @@ body {
     left: 0;
     padding: 0 10px 10px;
     width: 100%;
+   overflow: hidden; /* Adiciona overflow: hidden para esconder o conteúdo fora do contêiner */
  }
 
 #log>div {
@@ -75,6 +76,7 @@ body {
 }
 
 #log .message {
+  	font-size: 40px;
      color: #ffffff;
      padding: 1em 1em 0.8em 0.8em;
      border-radius: 15px;
@@ -97,10 +99,12 @@ body {
     margin-left: 0.2em;
 }
 
+/* ... (seu código existente) ... */
+
 @keyframes fadeInFromBottom {
     0% {
         opacity: 0;
-        transform: translateY(50px); /* Ajuste conforme necessário */
+        transform: translateY(50px);
     }
     100% {
         opacity: 1;
@@ -108,7 +112,18 @@ body {
     }
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
 #log>div {
-    animation: fadeInFromBottom 0.2s ease-out; /* Ajuste a duração e a função de temporização conforme necessário */
+    animation: fadeInFromBottom 0.2s ease-out, fadeOut 0.5s 30s ease forwards; /* Adiciona a animação fadeOut com 30 segundos de duração */
     margin: 1em;
 }
